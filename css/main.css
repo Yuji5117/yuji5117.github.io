@@ -387,8 +387,8 @@ footer {
     .top {
         width: 100%;
         height: 100vh;
+        background-image: url(../img/main480.jpg);
         background-size: cover;
-        background-image: url(../img/main.jpg);
         position: relative;
     }
 
@@ -423,27 +423,28 @@ footer {
     .frase {
         position: absolute;
         top: 50%;
-        left: 15%;
+        left: 5%;
         transform: translate(0, -50%);
     }
     .frase h1 {
-        font-size: 24px;
+        font-size: 32px;
+        letter-spacing: .1em;
         text-shadow: 1px 1px black;
     }
     .frase p {
-        font-size: 6px;
-        /* letter-spacing: .3em; */
+        font-size: 12px;
+        letter-spacing: .2em;
         text-shadow: 1px 1px black;
     }
     .company-name {
         position: absolute;
         bottom: 20px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        left: 10%;
+        /* transform: translate(0, 0); */
     }
     .company-name p {
         width: 100%;
-        font-size: 12px;
+        font-size: 16px;
         text-shadow: 1px 1px black;
         letter-spacing: .1em;
         /* line-height: 1.5em; */
@@ -457,14 +458,14 @@ footer {
     /* company-contents */
     .company-contents {
         height: auto;
-        /* background-image: url(../img/company-contents-bg.jpg); */
-        background-size: cover;
+        background-image: url(../img/company-contents-bg480.jpg);
+        background-size: 100% 100%;
     }
     .company-contents-title {
         padding-top: 55px;
     }
     .company-contents-title h2 {
-        font-size: 24px;
+        font-size: 26px;
         letter-spacing: .3em;
     }
     .company-contents-title p {
@@ -482,22 +483,22 @@ footer {
         opacity: .8;
     }
     .contents-upper-box {
-        width: 75%;
+        width: 70%;
         height: 180px;
         padding: 0 20px;
         position: absolute;
         top: 28px;
         left: 20%;
-        box-shadow: none;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
     }
     .contents-box-title {
-        font-size: 12px;
+        font-size: 16px;
         padding-bottom: 10px;
     }
     .contents-box-text {
-        font-size: 4px;
+        font-size: 8px;
         /* letter-spacing: .1em; */
-        line-height: 4em;
+        line-height: 2em;
     }
     .company-contents-down {
         margin-top: 50px;
@@ -510,7 +511,7 @@ footer {
         position: absolute;
         top: 33px;
         left: 5%;
-        box-shadow: none;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
     }
 
     /* LINEUP */
@@ -538,7 +539,7 @@ footer {
         border-radius: 4px;
     }
     .item-lineup-items p {
-        font-size: 10px;
+        font-size: 8px;
         line-height: 2em;
         padding-left: 0;
         margin-top: 20px;
@@ -551,15 +552,15 @@ footer {
     /* VISON */
     .company-vision {
         height: auto;
-        background-image: none;
-        /* background-size: 100% 100%; */
+        background-image: url(../img/vision-bg480.jpg);
+        background-size: cover;
     }
 
     .vision-title {
         padding-top: 65px;
     }
     .vision-title h2 {
-        font-size: 24px;
+        font-size: 26px;
         /* letter-spacing: .3em; */
     }
     .vistion-items {
@@ -584,14 +585,14 @@ footer {
     .vision-item dt h3 {
         padding-top: 8px;
         padding-right: 20px;
-        font-size: 48px;
+        font-size: 52px;
     }
     .vision-item dd {
         padding-top: 8px;
     }
     .vision-item dd h4 {
         padding-bottom: 15px;
-        font-size: 12px;
+        font-size: 16px;
         /* letter-spacing: 0.2em; */
         line-height: 1.5em;
     }
@@ -602,9 +603,9 @@ footer {
         letter-spacing: 0.1em;
     }
     .vision-item dd p {
-        font-size: 6px;
+        font-size: 10px;
         /* letter-spacing: 0.2em; */
-        line-height: 3em;
+        line-height: 2em;
     }
     .item3 dd p {
         padding-right: 0;
@@ -623,15 +624,15 @@ footer {
     .contact-tel {
         width: 100%;
         height: 400px;
-        /* background-image: url(../img/contact-tel.jpg);
-        background-size: 100% 100%; */
+        background-image: url(../img/contact-tel480.jpg);
+        background-size: cover;
     }
     .contact-tel h4 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 40px;
     }
     .contact-tel h4 span {
-        font-size: 16px;
+        font-size: 18px;
     }
     .contact-tel h4 .fa-phone-alt {
         font-size: 18px;
@@ -642,16 +643,14 @@ footer {
         height: 400px;
     }
     .contact-mail h4 {
-        font-size: 20px;
-
+        font-size: 24px;
     }
     .contact-mail p {
         display: inline-block;
-        /* padding: 10px; */
         margin-top: 30px;
     }
     .contact-mail p a {
-        font-size: 12px;
+        font-size: 14px;
     }
     /* CONTACT */
 
@@ -662,9 +661,8 @@ footer {
         height: auto;
     }
     .footer-container {
-        width: 85%;
+        width: 80%;
         margin: 0 auto;
-        padding-bottom: 55px;
         display: flex;
         flex-direction: column;
     }
@@ -686,7 +684,7 @@ footer {
     }
     .footer-table-left tr td{
         font-size: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     .footer-table-right {
         padding-top: 0;
@@ -694,7 +692,7 @@ footer {
     }
     .footer-table-right tr td{
         font-size: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     .footer-table-left tr td:first-child {
         padding-right: 25px;
@@ -707,7 +705,7 @@ footer {
 
 }
 
-@media screen and (min-width: 480px) and (max-width:1080px) {
+@media screen and (min-width: 481px) and (max-width:1080px) {
     /* TOP */
     /* .top {
         width: 100%;
