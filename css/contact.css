@@ -19,22 +19,12 @@
     width: 70%;
     margin: 0 auto;
 }
-.form-table {
-    width: 100%;
-    padding-top: 65px;
-    display: flex;
-    flex-direction: column;
-    
+.form-items {
+
 }
-.form-table tr  {
+.form-item {
+    border-bottom: 1px dashed #333;
 }
-.form-table tr td {
-    width: 100%;
-    background-color: pink;
-    padding: 25px 0;
-    border-bottom: 1px dotted #333;
-}
-.form-table tr td .table-text {
-    width: 480px;
-    height: 40px;
+.form-item:last-child {
+    border-bottom: none;
 }

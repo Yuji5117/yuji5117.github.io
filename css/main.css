@@ -90,11 +90,11 @@ nav {
 /* TOP */
 
 
-/* company-contents */
-.company-contents {
+/* service-contents */
+.service-contents {
     width: 100%;
     height: 100%;
-    background-image: url(../img/company-contents-bg.jpg);
+    background-image: url(../img/contents-bg.jpg);
     background-size: cover;
 }
 .company-contents-title {
@@ -174,14 +174,16 @@ nav {
     padding: 45px 0;
     display: flex;
 }
-.lineup-container .item-lineup-title {
-    border-radius: 4px;
-    margin-right: 40px;
+.item-lineup-title {
+    width: 30%;
+    margin-right: 30px;
 }
 .item-lineup-title h4 {
     padding: 20px;
+    
     font-size: 26px;
     color: white;
+    border-radius: 4px;
     background-color: #A1C1C2;
 }
 .item-lineup-items p {
@@ -427,7 +429,7 @@ footer {
         transform: translate(0, -50%);
     }
     .frase h1 {
-        font-size: 32px;
+        font-size: 30px;
         letter-spacing: .1em;
         text-shadow: 1px 1px black;
     }
@@ -456,10 +458,11 @@ footer {
 
 
     /* company-contents */
-    .company-contents {
+    .service-contents {
+        width: 100%;
         height: auto;
-        background-image: url(../img/company-contents-bg480.jpg);
-        background-size: 100% 100%;
+        background-image: url(../img/contents-bg480.jpg);
+        background-size: cover;
     }
     .company-contents-title {
         padding-top: 55px;
@@ -625,7 +628,7 @@ footer {
         width: 100%;
         height: 400px;
         background-image: url(../img/contact-tel480.jpg);
-        background-size: cover;
+        background-size: 100% 100%;
     }
     .contact-tel h4 {
         font-size: 20px;
@@ -661,7 +664,7 @@ footer {
         height: auto;
     }
     .footer-container {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -798,7 +801,7 @@ footer {
         height: 336px;
         position: absolute;
         top: 58px;
-        left: 35%;
+        left: 20%;
     }
     .contents-box-title {
         font-size: 26px;
@@ -840,7 +843,7 @@ footer {
         text-align: center;
     }
     .item-lineup-title h4 {
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         padding: 25px;
         font-size: 32px;
@@ -935,3 +938,140 @@ footer {
 } 
 
 /* FOR IPHONE */
+
+@media screen and (min-width: 481px) and (max-width:780px) {
+    /* VISON */
+    .company-vision {
+        height: auto;
+        background-image: url(../img/vision-bg480.jpg);
+        background-size: cover;
+    }
+
+    .vision-title {
+        padding-top: 65px;
+    }
+    .vision-title h2 {
+        /* font-size: 26px; */
+        /* letter-spacing: .3em; */
+    }
+    .vistion-items {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .item1 {
+        padding-top: 80px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .item2 {
+        padding-top: 110px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .item3 {
+        padding-top: 110px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .vision-item dt h3 {
+        padding-top: 8px;
+        padding-right: 30px;
+        font-size: 68px;
+    }
+    .vision-item dd {
+        padding-top: 8px;
+    }
+    .vision-item dd h4 {
+        padding-bottom: 15px;
+        font-size: 20px;
+        /* letter-spacing: 0.2em; */
+        line-height: 1.5em;
+    }
+    .item1 dd h4, .item2 dd h4 {
+        padding-right: 15px;
+    }
+    .item2 dd h4 {
+        letter-spacing: 0.1em;
+    }
+    .vision-item dd p {
+        font-size: 14px;
+        /* letter-spacing: 0.2em; */
+        line-height: 2em;
+    }
+    .item3 dd p {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    /* VISON */
+
+
+
+    #contact {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-tel {
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/contact-tel480.jpg);
+        background-size: 100% 100%;
+    }
+    .contact-tel h4 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .contact-tel h4 span {
+        font-size: 24px;
+    }
+    .contact-tel h4 .fa-phone-alt {
+        font-size: 22px;
+        padding-right: 0.5em;
+    }
+    .contact-mail {
+        width: 100%;
+        height: 600px;
+    }
+    .contact-mail h4 {
+        font-size: 34px;
+    }
+    .contact-mail p {
+        display: inline-block;
+        margin-top: 40px;
+    }
+    .contact-mail p a {
+        font-size: 24px;
+    }
+    /* CONTACT */
+    /* FOOTER */
+    .footer-container {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .footer-right {
+        height: 100%;
+        width: 50%;
+        padding-left: 70px;
+    }
+    .footer-table-left {
+        /* padding-top: 80px; */
+        margin-left: 0;
+    }
+    .footer-table-left tr td{
+        font-size: 8px;
+        /* padding-bottom: 55px; */
+    }
+    .footer-table-right {
+        /* padding-top: 80px; */
+        margin-left: 30px;
+    }
+    .footer-table-right tr td{
+        font-size: 8px;
+        padding-bottom: 50px;
+    }
+    .footer-table-left tr td:first-child, .footer-table-right tr td:first-child {
+        padding-right: 20px;
+    }
+/* FOOTER */
+} 
