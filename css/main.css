@@ -549,7 +549,7 @@ footer {
 
     /* LINEUP */
     .item-lineup {
-        padding: 25px;
+        padding: 25px 0;
     }
     .lineup-container {
         width: 90%;
@@ -602,17 +602,17 @@ footer {
     }
     .item1 {
         padding-top: 75px;
-        padding-right: 20px;
+        padding-right: 0;
         padding-left: 0;
     }
     .item2 {
         padding-top: 110px;
-        padding-right: 20px;
+        padding-right: 0;
         padding-left: 0;
     }
     .item3 {
         padding-top: 120px;
-        padding-right: 20px;
+        padding-right: 0;
         padding-left: 0;
     }
     .vision-item dt h3 {
@@ -630,7 +630,7 @@ footer {
         line-height: 1.5em;
     }
     .item1 dd h4, .item2 dd h4 {
-        padding-right: 15px;
+        padding-right: 0;
     }
     .item2 dd h4 {
         letter-spacing: 0.1em;
@@ -656,7 +656,7 @@ footer {
     }
     .contact-tel {
         width: 100%;
-        height: 400px;
+        height: 350px;
         background-image: url(../img/contact-tel480.jpg);
         background-size: 100% 100%;
     }
@@ -673,7 +673,7 @@ footer {
     }
     .contact-mail {
         width: 100%;
-        height: 400px;
+        height: 350px;
     }
     .contact-mail h4 {
         font-size: 24px;
