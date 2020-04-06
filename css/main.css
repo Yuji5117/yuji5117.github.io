@@ -11,7 +11,8 @@ html {
 /* BODY */
 
 .main-wrapper {
-    width: 100%;      
+    width: 100%;    
+    overflow: hidden;  
 }
 
 /* TOP */
@@ -19,6 +20,10 @@ html {
     height: 100vh;
     background-size: cover;
     background-image: url(../img/main.jpg);
+}
+.top-container {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -42,10 +47,30 @@ nav {
     border: 3px solid white;
     box-shadow: 
     2px 2px, 2px 2px inset;
+    transition: .8s;
+}
+.nav-list li:last-child:hover {
+    opacity: 0.7;
 }
 .nav-list li a {
     font-size: 24px;
     color: white;
+    position: relative;
+}
+.nav-list li a::after {
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -10px;
+    content: "";
+    display: block;
+    transition: all .3s ease;
+    width: 0;
+}
+.nav-list li a:hover::after {
+    width: 100%;
+}
+.nav-list li:last-child a::after {
+    display: none;
 }
 /* HEADER */
 
@@ -317,6 +342,11 @@ nav {
     border: 1px solid white;
     padding: 15px;
     margin-top: 40px;
+    transition: .9s;
+    cursor: pointer;
+}
+.contact-mail p:hover {
+    opacity: 0.6;
 }
 .contact-mail p a {
     color: white;

@@ -13,32 +13,34 @@
             <h2>Contact us</h2>
         </div>
         <div class="contact-form-container">
-            <form action="">
+            <form action="confirmation.php" method="post">
                 <div class="form-items">
                     <div class="form-item">
                         <label for="">名前</label>
-                        <input type="text"　size="50">
+                        <input type="text" name="name"　size="50">
                     </div>
                     <div class="form-item">
                         <label for="">電話番号</label>
-                        <input type="tel">
+                        <input type="tel" name="tel">
                     </div>
                     <div class="form-item">
                         <label for="">メールアドレス</label>
-                        <input type="mail">
+                        <input type="mail" name="mail">
                     </div>
                     <div class="form-item">
                         <label for="">住所</label>
-                        <input type="text">
+                        <input type="text" name="address">
                     </div>
                     <div class="form-item">
                         <label for="">その他記入欄</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="inquiry" id="" cols="30" rows="10"></textarea>
                     </div>
                 </div>
                 <button type="submit">送信</button>
             </form>
         </div>
     </section>
+
+    
 </body>
 </html>
