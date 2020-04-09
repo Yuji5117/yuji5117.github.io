@@ -9,8 +9,10 @@ $(function() {
         }
     });
 
-    $('.icon').on('click', function() {
-        $('.nav-bar ul').toggleClass('menu-lists-active');
+    // menu listsの開閉。 //
+    $('#menu-toggle').on('click', function() {
+        $('.menu-bar ul').toggleClass('menu-lists-active');
+        $('body').toggleClass('fixed');
     });
 
 });
