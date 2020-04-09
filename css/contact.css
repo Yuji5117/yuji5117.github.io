@@ -1,70 +1,158 @@
-.contact {
-    width: 100%;
-    height: auto;
-}
-.contact-title {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #213F8A;
+/* CONTACT */
 
-}
-.contact-title h2 {
-    color: white;
-    font-size: 48px;
-}
-.contact-form-container {
-    padding-top: 30px;
-    width: 60%;
-    margin: 0 auto;
-}
-.form-item {
-    padding: 30px 5em;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    border-bottom: 1px dashed #333;
-}
-.form-item:last-child {
-    border-bottom: none;
-}
-.form-label {
-    padding-top: 15px;
-    font-size: 18px;
-}
-.form-item input {
-    padding: 10px;
-    font-size: 18px;
-}
-.form-item textarea {
-    padding: 10px;
-    font-size: 18px;
-}
-.send {
-    padding: 50px 0;
+#contact {
+    width: 100%;
+    height: 450px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.send-btn {
+.contact-tel {
+    width: 50%;
+    background-image: url(../img/contact-tel.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.contact-tel-bgcover {
+    width: 100%;
+    height: 100%;
+    background-color: #152B69;
+    opacity: 0.5;
+    position: absolute;
+}
+.contact-tel h4 {
     color: white;
-    font-size: 18px;
-    padding: 5px 80px;
-    border-radius: 15px;
+    font-size: 26px;
+    line-height: 50px;
+    z-index: 1;
+}
+.contact-tel h4 span {
+    font-size: 24px;
+}
+.contact-tel h4 .fa-phone-alt {
+    font-size: 20px;
+    padding-right: 10px;
+}
+.contact-mail {
+    width: 50%;
     background-color: #213F8A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-mail h4 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Century Gothic';
+    font-weight: 400;
+}
+.contact-mail p {
+    margin-top: 40px;
     cursor: pointer;
 }
+.contact-mail p a {
+    color: white;
+    font-size: 14px;
+    padding: 15px;
+    transition: .9s;
+    display: inline-block;
+    border: 1px solid white;
+}
+.contact-mail p a:hover {
+    color: #213F8A;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #333;
+    opacity: 0.8;
+    
+}
+/* CONTACT */
 
+/* FOR IPHONE */
 
 @media screen and (max-width:480px) {
-    .contact-title h2 {
-        /* color: white; */
-        font-size: 28px;
+    /* CONTACT */
+
+    #contact {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-    .contact-form-container {
-        padding-top: 30px;
-        width: 90%;
-        margin: 0 auto;
+    .contact-tel {
+        width: 100%;
+        height: 350px;
+        background-image: url(../img/contact-tel480.jpg);
+        background-size: 100% 100%;
     }
+    .contact-tel h4 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .contact-tel h4 span {
+        font-size: 18px;
+    }
+    .contact-tel h4 .fa-phone-alt {
+        font-size: 18px;
+        padding-right: 0.5em;
+    }
+    .contact-mail {
+        width: 100%;
+        height: 350px;
+    }
+    .contact-mail h4 {
+        font-size: 24px;
+    }
+    .contact-mail p {
+        display: inline-block;
+        margin-top: 30px;
+    }
+    .contact-mail p a {
+        font-size: 14px;
+    }
+    /* CONTACT */
+}
+
+
+@media screen and (min-width: 481px) and (max-width:780px) {
+    #contact {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-tel {
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/contact-tel480.jpg);
+        background-size: 100% 100%;
+    }
+    .contact-tel h4 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .contact-tel h4 span {
+        font-size: 24px;
+    }
+    .contact-tel h4 .fa-phone-alt {
+        font-size: 22px;
+        padding-right: 0.5em;
+    }
+    .contact-mail {
+        width: 100%;
+        height: 600px;
+    }
+    .contact-mail h4 {
+        font-size: 34px;
+    }
+    .contact-mail p {
+        display: inline-block;
+        margin-top: 40px;
+    }
+    .contact-mail p a {
+        font-size: 24px;
+    }
+    /* CONTACT */
 }

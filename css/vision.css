@@ -1,0 +1,240 @@
+/* VISON */
+.company-vision {
+    width: 100%;
+    height: 1030px;
+    background-image: url(../img/vision-bg.jpg);
+    background-size: 100% 100%;
+}
+
+.vision-title {
+    padding-top: 85px;
+    text-align: center;
+}
+.vision-title h2 {
+    font-size: 58px;
+    color: #1E416B;
+    letter-spacing: .3em;
+}
+.vision-item {
+    display: flex;
+}
+.item1 {
+    padding-top: 90px;
+    padding-right: 305px;
+    padding-left: 60px;
+}
+.item2 {
+    padding-top: 140px;
+    padding-right: 200px;
+    padding-left: 195px;
+}
+.item3 {
+    padding-top: 140px;
+    padding-right: 40px;
+    padding-left: 380px;
+}
+.vision-item dt h3 {
+    padding-right: 30px;
+    color: #557598;
+    font-size: 91px;
+    font-style: italic;
+}
+.vision-item dd {
+    padding-top: 8px;
+}
+.vision-item dd h4 {
+    padding-bottom: 25px;
+    color: #738EAA;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+}
+.item2 dd h4 {
+    letter-spacing: 0.1em;
+}
+.vision-item dd p {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    line-height: 1.8em;
+}
+.item3 dd p {
+    padding-right: 120px;
+}
+/* VISON */
+
+/* FOR IPHONE */
+
+@media screen and (max-width:480px) {
+    /* VISON */
+    .company-vision {
+        height: auto;
+        background-image: url(../img/vision-bg480.jpg);
+        background-size: cover;
+    }
+
+    .vision-title {
+        padding-top: 65px;
+    }
+    .vision-title h2 {
+        font-size: 26px;
+        /* letter-spacing: .3em; */
+    }
+    .vistion-items {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .item1 {
+        padding-top: 75px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .item2 {
+        padding-top: 110px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .item3 {
+        padding-top: 120px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .vision-item dt h3 {
+        padding-top: 8px;
+        padding-right: 20px;
+        font-size: 52px;
+    }
+    .vision-item dd {
+        padding-top: 8px;
+    }
+    .vision-item dd h4 {
+        padding-bottom: 15px;
+        font-size: 16px;
+        /* letter-spacing: 0.2em; */
+        line-height: 1.5em;
+    }
+    .item1 dd h4, .item2 dd h4 {
+        padding-right: 0;
+    }
+    .item2 dd h4 {
+        letter-spacing: 0.1em;
+    }
+    .vision-item dd p {
+        font-size: 10px;
+        /* letter-spacing: 0.2em; */
+        line-height: 2em;
+    }
+    .item3 dd p {
+        padding-right: 0;
+        padding-bottom: 95px;
+    }
+    /* VISON */
+}
+
+@media screen and (min-width: 781px) and (max-width:1080px) {
+    /* VISON */
+    .company-vision {
+        width: 100%;
+        height: auto;
+        background-image: url(../img/vision-bg.jpg);
+        background-size: 100% 100%;
+    }
+
+    .vision-title {
+        padding-top: 85px;
+        text-align: center;
+    }
+    .vision-title h2 {
+        font-size: 46px;
+    }
+    .vistion-items {
+        padding-bottom: 100px;
+    }
+    .item1 {
+        padding-right: 280px;
+    }
+    .item2 {
+        padding-top: 120px;
+        padding-right: 180px;
+    }
+    .item3 {
+        padding-top: 120px;
+        padding-right: 45px;
+    }
+    .vision-item dt h3 {
+        padding-top: 3px;
+        padding-right: 30px;
+        font-size: 68px;
+        font-style: italic;
+    }
+    .vision-item dd h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    .vision-item dd p {
+        font-size: 14px;
+    }
+    .item3 dd p {
+        padding-right: 0;
+    }
+    /* VISON */
+}
+
+@media screen and (min-width: 481px) and (max-width:780px) {
+    /* VISON */
+    .company-vision {
+        height: auto;
+        background-image: url(../img/vision-bg480.jpg);
+        background-size: cover;
+    }
+    .vision-title {
+        padding-top: 65px;
+    }
+    .vistion-items {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .item1 {
+        padding-top: 80px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .item2 {
+        padding-top: 110px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .item3 {
+        padding-top: 110px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .vision-item dt h3 {
+        padding-top: 8px;
+        padding-right: 30px;
+        font-size: 68px;
+    }
+    .vision-item dd {
+        padding-top: 8px;
+    }
+    .vision-item dd h4 {
+        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    .item1 dd h4, .item2 dd h4 {
+        padding-right: 15px;
+    }
+    .item2 dd h4 {
+        letter-spacing: 0.1em;
+    }
+    .vision-item dd p {
+        font-size: 14px;
+        line-height: 2em;
+    }
+    .item3 dd p {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    /* VISON */
+}
