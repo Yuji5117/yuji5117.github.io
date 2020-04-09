@@ -10,6 +10,7 @@ html {
 /* モーダルopen時に背景をスクロールできないようにする為。 */
 body.fixed {
     overflow: hidden;
+    /* position: fixed; */
 }
 
 
@@ -462,36 +463,41 @@ footer {
         /* position: relative; */
     }
     .icon {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         display: block;
-        position: absolute;
+        position: fixed;
         top: 20px;
         right: 20px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 4;
     } 
-    .humburger {
+    .hamburger {
         position: absolute;
-        top: 17px;
-        right: 2px;
+        top: 24px;
+        right: 10px;
         width: 30px;
         height: 2px;
         background-color: #fff;
     }
-    .humburger:before,
-    .humburger:after {
+    .hamburger::before,
+    .hamburger::after {
         content: '';
         width: 30px;
         height: 2px;
         position: absolute;
         background-color: #fff;
+        transition: .5s ease-in-out;
     }
-    .humburger:before {
+    .hamburger:before {
         top: -10px;
     }
-    .humburger:after {
+    .hamburger:after {
         top: 10px;
     }
+    /* ANIMATION */
+    .icon.active.
     nav {
         display: flex;
         justify-content: unset;
@@ -506,8 +512,7 @@ footer {
         position: fixed;
         top: 0;
         left: -75%;
-
-        background-color: rgba(0, 0, 0, 0.81);
+        background-color: rgba(0, 0, 0);
         z-index: 2;
         transition: .5s;
     }

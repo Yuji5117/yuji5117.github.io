@@ -40,9 +40,6 @@ table tr td {
     font-size: 18px;
     cursor: pointer;
 }
-.confirmation-btns input:hover {
-    
-}
 
 
 @media screen and (max-width:480px) {

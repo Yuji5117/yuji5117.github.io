@@ -18,7 +18,13 @@ $(function() {
     // menuのlistをクリックするとmenu-listsが閉じる。 //
     $(".toggle-closer").on('click', function() {
         $(".menu-bar ul").removeClass('menu-lists-active');
-        $('body').toggleClass('fixed');
+        $('body').removeClass('fixed');
+    });
+
+    // menuのlistをクリックするとmenu-listsが閉じる。 //
+    $(".nav-list").on('click', function() {
+        $(".menu-bar ul").removeClass('menu-lists-active');
+        $('body').removeClass('fixed');
     });
 
 });
