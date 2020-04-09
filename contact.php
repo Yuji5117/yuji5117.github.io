@@ -1,3 +1,23 @@
+<?php
+
+session_start();
+
+//クリックジャッキング対策
+header('X-FRAME-OPTIONS: SAMEORIGIN');
+
+// トークン生成
+if (!isset($_SESSION['token'])) {
+    $_SESSION['token'] = sha1(random_bytes(30));
+}
+
+// HTML特殊文字をエスケープする関数
+function escape($str) {
+    return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,27 +36,30 @@
             <form action="confirmation.php" method="post">
                 <div class="form-items">
                     <div class="form-item">
-                        <label for="">名前</label>
-                        <input type="text" name="name"　size="50">
+                        <label for="" class="form-label">お名前</label>
+                        <input type="text" name="name"　size="50" required>
                     </div>
                     <div class="form-item">
-                        <label for="">電話番号</label>
+                        <label for="" class="form-label">電話番号</label>
                         <input type="tel" name="tel">
                     </div>
                     <div class="form-item">
-                        <label for="">メールアドレス</label>
-                        <input type="mail" name="mail">
+                        <label for="" class="form-label" required>メールアドレス</label>
+                        <input type="mail" name="mail" required>
                     </div>
                     <div class="form-item">
-                        <label for="">住所</label>
+                        <label for="" class="form-label">住所</label>
                         <input type="text" name="address">
                     </div>
                     <div class="form-item">
-                        <label for="">その他記入欄</label>
-                        <textarea name="inquiry" id="" cols="30" rows="10"></textarea>
+                        <label for="" class="form-label">その他記入欄</label>
+                        <textarea name="inquiry" id="" cols="30" rows="7" required></textarea>
                     </div>
                 </div>
-                <button type="submit">送信</button>
+                <input type="hidden" name="token" value="<?=$_SESSION['token']?>">
+                <div class="send">
+                    <button type="submit" class="send-btn">送信</button>
+                </div>
             </form>
         </div>
     </section>

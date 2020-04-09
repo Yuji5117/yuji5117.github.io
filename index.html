@@ -11,6 +11,20 @@
     <script src="https://kit.fontawesome.com/461c67f52d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="icon">
+                <div class="humburger"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#top">TOP</a></li>
+                <li><a href="#service">サービス内容と商品</a></li>
+                <li><a href="#vision">経営ビジョン</a></li>
+                <li><a href="contact.php">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="main-wrapper">
 
         <section id="top" class="top">
@@ -18,17 +32,6 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
-                <header>
-    
-                    <nav>
-                        <ul class="nav-list">
-                            <!-- <li><a href="#top">TOP</a></li> -->
-                            <li><a href="#service">サービス内容と商品</a></li>
-                            <li><a href="#vision">経営ビジョン</a></li>
-                            <li><a href="contact.php">お問い合わせ</a></li>
-                        </ul>
-                    </nav>
-                </header>
                 <div class="frase">
                     <h1>　　人より楽しく<br>　人よりワクワクする<br>仕事をする</h1>
                     <p>We Work More Fun and Exciting than People.</p>
@@ -65,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item-lineup" data-aos="zoom-in">
+            <div class="item-lineup">
                 <div class="lineup-container">
                     <div class="item-lineup-title">
                         <h4>商品ラインナップ</h4>
@@ -82,8 +85,8 @@
             <div class="vision-title">
                 <h2>経営ビジョン</h2>
             </div>
-            <div class="vistion-items">
-                <dl class="vision-item item1" data-aos="zoom-in-up">
+            <div class="vistion-items" data-aos="zoom-in-up">
+                <dl class="vision-item item1">
                     <dt>
                         <h3>01</h3>
                     </dt>
@@ -94,7 +97,7 @@
                             製造を行って参ります。</p>
                     </dd>
                 </dl>
-                <dl class="vision-item item2" data-aos="zoom-in-up">
+                <dl class="vision-item item2">
                     <dt>
                         <h3>02</h3>
                     </dt>
@@ -104,7 +107,7 @@
                             魚を食べる事の喜びを発信すべく原料加工並びに製品の開発をして参ります。</p>
                     </dd>
                 </dl>
-                <dl class="vision-item item3" data-aos="zoom-in-up">
+                <dl class="vision-item item3">
                     <dt>
                         <h3>03</h3>
                     </dt>
@@ -117,13 +120,13 @@
             </div>
         </section>
 
-        <section id="contact" data-aos="zoom-in-up">
+        <section id="contact"data-aos="zoom-in-up">
             <div class="contact-tel">
                 <div class="contact-tel-bgcover"></div>
                 <h4>お電話でのお問い合わせはこちら<br>
                 <i class="fas fa-phone-alt"></i><span>078-351-2227</span></h4>
             </div>
-            <div class="contact-mail" data-aos="zoom-in-up">
+            <div class="contact-mail">
                 <h4>Contact us</h4>
                 <p><a href="contact.php">メールにてのお問い合わせはこちら</a></p>
             </div>
@@ -172,8 +175,11 @@
             </div>
         </div>
     </footer>
+    <a href="#top" class="fix-icon"><i class="fa fa-angle-up"></i></a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
         AOS.init();
     </script>

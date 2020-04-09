@@ -1,0 +1,54 @@
+.confirmation {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.confirmation h3 {
+    font-weight: 600;
+}
+.confirmation p {
+    padding-top: 30px;
+    color: #333;
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* border: 1px solid #333; */
+    border-collapse:  collapse;
+    background-color: #fff;
+}
+table tr {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+table tr td {
+    color: #333;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid;
+}
+.label {
+    background-color: #ddd;
+}
+.confirmation-btns {
+    text-align: center;
+}
+.confirmation-btns input {
+    width: 120px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.confirmation-btns input:hover {
+    
+}
+
+
+@media screen and (max-width:480px) {
+    .confirmation {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+}

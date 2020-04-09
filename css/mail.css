@@ -1,0 +1,22 @@
+.mail {
+    text-align: center;
+}
+.mail h2 {
+    padding-top: 200px;
+    font-size: 44px;
+    font-weight: 400;
+}
+.mail p {
+    color: #333;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 28px;
+}
+.mail a {
+    padding: 15px 30px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #213F8A;
+}
