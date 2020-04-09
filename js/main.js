@@ -15,4 +15,10 @@ $(function() {
         $('body').toggleClass('fixed');
     });
 
+    // menuのlistをクリックするとmenu-listsが閉じる。 //
+    $(".toggle-closer").on('click', function() {
+        $(".menu-bar ul").removeClass('menu-lists-active');
+        $('body').toggleClass('fixed');
+    });
+
 });
