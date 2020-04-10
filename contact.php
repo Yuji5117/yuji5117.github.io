@@ -59,6 +59,8 @@ function escape($str) {
                 <input type="hidden" name="token" value="<?=$_SESSION['token']?>">
                 <div class="send">
                     <button type="submit" class="send-btn">送信</button>
+                    <button onclick="history.back()" class="back-btn">戻る</button>
+                    
                 </div>
             </form>
         </div>

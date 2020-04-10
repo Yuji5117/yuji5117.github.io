@@ -193,6 +193,7 @@
     .vistion-items {
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 80px;
     }
     .item1 {
         padding-top: 80px;
@@ -234,7 +235,6 @@
     }
     .item3 dd p {
         padding-right: 0;
-        padding-bottom: 0;
     }
     /* VISON */
 }

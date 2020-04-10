@@ -59,12 +59,102 @@
 
 @media screen and (max-width:480px) {
     .contact-title h2 {
-        /* color: white; */
         font-size: 28px;
     }
     .contact-form-container {
         padding-top: 30px;
         width: 90%;
         margin: 0 auto;
+    }
+    .form-item {
+        padding: 10px 1em;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .form-label {
+        padding-top: 8px;
+        font-size: 12px;
+    }
+    .form-item input {
+        padding: 5px;
+        font-size: 12px;
+        border: 1px solid #ddd;
+    }
+    .form-item textarea {
+        padding: 5px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+    }
+    .send {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .send-btn {
+        color: white;
+        font-size: 14px;
+        padding: 5px 40px;
+        border-radius: 15px;
+        background-color: #213F8A;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .back-btn {
+        color: #213F8A;
+        font-size: 14px;
+        padding: 5px 40px;
+        border-radius: 15px;
+        background-color: #fff;
+        border: 1px solid #213F8A;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+
+    @media screen and (min-width: 481px) and (max-width:1080px) {
+        .contact-title h2 {
+            font-size: 32px;
+        }
+        .contact-form-container {
+            padding-top: 30px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .form-item {
+            padding: 10px 2em;
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+        .form-label {
+            padding-top: 8px;
+            font-size: 12px;
+        }
+        .form-item input {
+            padding: 5px;
+            font-size: 12px;
+            border: 1px solid #ddd;
+        }
+        .form-item textarea {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+        .send-btn {
+            font-size: 18px;
+            padding: 5px 40px;
+            border-radius: 15px;
+            background-color: #213F8A;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .back-btn {
+            color: #213F8A;
+            font-size: 18px;
+            padding: 5px 40px;
+            border-radius: 15px;
+            background-color: #fff;
+            border: 1px solid #213F8A;
+            cursor: pointer;
+        }
     }
 }

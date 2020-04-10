@@ -7,18 +7,17 @@ html {
     scroll-behavior: smooth;
 }
 
-/* モーダルopen時に背景をスクロールできないようにする為。 */
-body.fixed {
-    overflow: hidden;
-    /* position: fixed; */
-}
-
-
 /* BODY */
-
 .main-wrapper {
     width: 100%;    
     overflow: hidden;  
+}
+
+/* MENU BAR FOR IPHONE AND IPAD */
+.menu-bar .menu-lists-active {
+    position: fixed;
+    top: 0;
+    left: 0;  
 }
 
 /* TOP */
@@ -32,7 +31,6 @@ body.fixed {
     height: 100%;
     position: relative;
 }
-
 .icon {
     display: none;
 }
@@ -49,7 +47,6 @@ nav {
     display: flex;
     justify-content: flex-end;
 }
-
 .nav-list li {
     display: inline-block;
     text-shadow: 2px 2px black;
@@ -163,52 +160,62 @@ nav {
         height: 100vh;
         padding-top: 0;
         padding-right: 0;
-        /* position: relative; */
     }
     .icon {
         width: 50px;
         height: 50px;
         display: block;
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 10px;
+        right: 10px;
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 4;
     } 
+    
+    /* HAMBERGER MENU */
     .hamburger {
         position: absolute;
         top: 24px;
-        right: 10px;
-        width: 30px;
+        right: 16px;
+        width: 18px;
         height: 2px;
         background-color: #fff;
+        transition: .4s ease-in-out;
     }
-    .hamburger::before,
-    .hamburger::after {
+    .hamburger:before,
+    .hamburger:after {
         content: '';
-        width: 30px;
+        width: 18px;
         height: 2px;
         position: absolute;
         background-color: #fff;
-        transition: .5s ease-in-out;
+        transition: .4s ease-in-out;
     }
     .hamburger:before {
-        top: -10px;
+        top: -6px;
     }
     .hamburger:after {
-        top: 10px;
+        top: 6px;
     }
     /* ANIMATION */
-    .icon.active. {
-
+    .icon.active .hamburger {
+        background-color: rgba(0,0,0,0);
     }
+    .icon.active .hamburger:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .icon.active .hamburger:after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    /* ANIMATION */
+    /* HAMBERGER MENU */
+    
     nav {
         display: flex;
         justify-content: unset;
-    }
-    .menu-bar .menu-lists-active {
-        left: 0;
     }
     .nav-list {
         width: 75%;
@@ -263,14 +270,12 @@ nav {
         position: absolute;
         bottom: 20px;
         left: 10%;
-        /* transform: translate(0, 0); */
     }
     .company-name p {
         width: 100%;
         font-size: 16px;
         text-shadow: 1px 1px black;
         letter-spacing: .1em;
-        /* line-height: 1.5em; */
     }
     .company-name p:first-child {
         letter-spacing: .1em;
@@ -292,9 +297,31 @@ nav {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width:1080px) {
-    /* TOP */
+@media screen and (min-width: 481px) and (max-width:780px) {
+    /* HEADER */
+    header {
+        padding-top: 40px;
+        padding-right: 15px;
+    }
 
+    .nav-list li {
+        margin-right: 20px;
+    }
+    .nav-list li:last-child {
+        border: 2px solid white;
+    }
+    .nav-list li a {
+        font-size: 14px;
+    }
+    /* HEADER */
+
+    .frase h1 {
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (min-width: 781px) and (max-width:1080px) {
     /* HEADER */
     header {
         padding-top: 40px;
@@ -335,5 +362,20 @@ nav {
         font-size: 18px;
     }
     /* TOP */
+
+
+    /* ICON TO TOP */
+    .fa-angle-up {
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 100;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0.81);
+    }
 } 
 /* FOR IPHONE */
