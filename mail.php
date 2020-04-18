@@ -26,55 +26,57 @@ $token = $_POST['token'];
 if(!(hash_equals($token, $_SESSION['token']) && !empty($token))) {
     echo "不正アクセスの可能性があります";
     exit();
-
+}
 ?>
 
 
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/mail.css">
-        <title>sample</title>
-    </head>
-    
-    <body>
-        <?php
-        mb_language("japanese");
-        mb_internal_encoding("UTF-8");
-        
-        $to = "yuji6523ny@gmail.com";
-        
-        $subject = "$name様からのお問合せ";
-        
-        $name = htmlspecialchars($_SESSION['name']); 
-        $tel = htmlspecialchars($_SESSION['tel']);
-        $mail = htmlspecialchars($_SESSION['mail']);
-        $address = htmlspecialchars($_SESSION['address']);
-        $inquiry = htmlspecialchars($_SESSION['inquiry']);
-        
-        
-        $body = "名前: $name\n".
-        "メール: $mail\n".
-        "電話番号: $tel\n".
-        "住所: $address\n".
-        "内容: $inquiry";
-        
-        
-        $header = "From:$mail";
-            
-        ?>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mail.css">
+    <title>sample</title>
+</head>
 
-        <div class="mail">
-            <?php if((mb_send_mail($to, $subject, $body, $header))): ?>
-                <h2>送信が完了しました</h2>    
-                <p class="message">お問い合わせありがとうございました。</p>
-            <?php else: ?>
-                <p>メールの送信が失敗しました</p>
-            <?php endif; ?>
-            <a href="index.html">HOMEへ</a>
+<body>
+    <?php
+    mb_language("japanese");
+    mb_internal_encoding("UTF-8");
+    
+    $to = "yuji6523ny@gmail.com";
+    
+    
+    $name = $_SESSION['name']; 
+    $tel = $_SESSION['tel']; 
+    $from = $_SESSION['mail']; 
+    $mail = $_SESSION['mail']; 
+    $address = $_SESSION['address']; 
+    $inquiry = $_SESSION['inquiry']; 
+    
+    $subject = "$name 様からのお問合せ";
+    
+    $body = "名前: $name\n".
+    "メール: $mail\n".
+    "電話番号: $tel\n".
+    "住所: $address\n".
+    "内容: $inquiry";
+    
+    
+    $header = "From: $from";
+        
+    ?>
+
+    <div class="mail">
+        <?php if((mb_send_mail($to, $subject, $body, $header))): ?>
+            <h2>送信が完了しました</h2>    
+            <p class="message">お問い合わせありがとうございました。</p>
+        <?php else: ?>
+            <p>メールの送信が失敗しました</p>
+        <?php endif; ?>
+        <a href="index.html">HOMEへ</a>
     </div>
- 
+
 </body>
 </html>

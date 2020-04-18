@@ -54,6 +54,17 @@
     border-radius: 15px;
     background-color: #213F8A;
     cursor: pointer;
+    margin-right: 5px;
+}
+.back-btn {
+    color: #213F8A;
+    font-size: 18px;
+    padding: 5px 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #213F8A;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 

@@ -200,6 +200,8 @@
     /* company-contents */
 }
 
+
+/* FOR IPAD */
 @media screen and (min-width: 481px) and (max-width:1080px) {
     /* company-contents */
     .company-contents-title h2 {

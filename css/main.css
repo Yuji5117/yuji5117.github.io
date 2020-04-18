@@ -130,8 +130,8 @@ nav {
     color: #fff;
     font-size: 18px;
     position: fixed;
-    bottom: 50px;
-    right: 60px;
+    bottom: 20px;
+    right: 20px;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.81);
 }

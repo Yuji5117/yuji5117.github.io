@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 //クリックジャッキング対策
@@ -28,25 +27,41 @@ if(!(hash_equals($token, $_SESSION['token']) && !empty($token))) {
     exit();
 }
 
-$name = isset($_POST["name"]) ? $POST["name"] : NULL;
-$tel = isset($_POST["tel"]) ? $POST["tel"] : NULL;
-$mail = isset($_POST["mail"]) ? $POST["mail"] : NULL;
-$address = isset($_POST["address"]) ? $POST["address"] : NULL;
-$inquiry = isset($_POST["inquiry"]) ? $POST["inquiry"] : NULL;
+$name = isset($_POST["name"]) ? $_POST["name"] : NULL;
+$tel = isset($_POST["tel"]) ? $_POST["tel"] : NULL;
+$mail = isset($_POST["mail"]) ? $_POST["mail"] : NULL;
+$address = isset($_POST["address"]) ? $_POST["address"] : NULL;
+$inquiry = isset($_POST["inquiry"]) ? $_POST["inquiry"] : NULL;
 
 
-// $name = spaceTrim($name);
-// $tel = spaceTrim($tel);
-// $mail = spaceTrim($mail);
-// $address = spaceTrim($address);
-// $inquiry = spaceTrim($inquiry);
+$name = spaceTrim($name);
+$tel = spaceTrim($tel);
+$mail = spaceTrim($mail);
+$address = spaceTrim($address);
+$inquiry = spaceTrim($inquiry);
 
+// 名前判定 //
+if ($name == '') {
+    $errors['name'] = "名前が入力されていません。";
+}
 
-$_SESSION["name"] = $name;
-$_SESSION["tel"] = $tel;
-$_SESSION["mail"] = $mail;
-$_SESSION["address"] = $address;
-$_SESSION["inquiry"] = $inquiry;
+// メール判定 //
+if ($mail == '') {
+    $errors['name'] = "メールが入力されていません。";
+}
+
+// コメント判定 //
+if ($inquiry == '') {
+    $errors['inquiry'] = "その他記入欄が入力されていません。";
+}
+
+if(count($errors) === 0) {
+    $_SESSION["name"] = $name;
+    $_SESSION["tel"] = $tel;
+    $_SESSION["mail"] = $mail;
+    $_SESSION["address"] = $address;
+    $_SESSION["inquiry"] = $inquiry;
+}
 
 ?>
 
@@ -70,26 +85,26 @@ $_SESSION["inquiry"] = $inquiry;
             <table>
                 <tr>
                     <td class="label">お名前</td>
-                    <td><?php echo $_POST["name"]; ?></td>
+                    <td><?php echo escape($name); ?></td>
                 </tr>
                 <tr>
                     <td class="label">電話番号</td>
-                    <td><?php echo $_POST["tel"]; ?></td>
+                    <td><?php echo escape($tel); ?></td>
                 </tr>
                 <tr>
                     <td class="label">メールアドレス</td>
-                    <td><?php echo $_POST["mail"]; ?></td>
+                    <td><?php echo escape($mail); ?></td>
                 </tr>
                 <tr>
                     <td class="label">住所</td>
-                    <td><?php echo $_POST["address"]; ?></td>
+                    <td><?php echo escape($address); ?></td>
                 </tr>
                 <tr>
                     <td class="label">問い合わせ内容</td>
-                    <td><?php echo $_POST["inquiry"]; ?></td>
+                    <td><?php echo nl2br(escape($inquiry)); ?></td>
                 </tr>
             </table>
-            <input type="hidden" name="token" value="<?php echo escape($token); ?>">
+            <input type="hidden" name="token" value= <?php echo escape($token); ?>>
             <div class="confirmation-btns">
                 <input class="submit-btn" type="submit" value="送信する" />
                 <input class="back-btn" type="button" value="前画面に戻る" onclick="history.back()">

@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 //クリックジャッキング対策
@@ -14,10 +13,7 @@ if (!isset($_SESSION['token'])) {
 function escape($str) {
     return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
 }
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
