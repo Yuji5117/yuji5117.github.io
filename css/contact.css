@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: -2;
 }
 .contact-tel-bgcover {
     width: 100%;
@@ -20,12 +21,12 @@
     background-color: #152B69;
     opacity: 0.5;
     position: absolute;
+    z-index: -1;
 }
 .contact-tel h4 {
     color: white;
     font-size: 26px;
     line-height: 50px;
-    z-index: 1;
 }
 .contact-tel h4 span {
     font-size: 24px;

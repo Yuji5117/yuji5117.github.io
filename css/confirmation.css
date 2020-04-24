@@ -53,6 +53,20 @@ table tr td {
         line-height: 1.5em;
         text-align: center;
     }
+
+    table tr {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .confirmation-btns {
+        text-align: center;
+    }
+    .confirmation-btns input {
+        width: 120px;
+        font-size: 18px;
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width:1080px) {
@@ -60,5 +74,9 @@ table tr td {
         width: 70%;
         margin: 0 auto;
         padding-top: 80px;
+    }
+    table tr {
+        display: grid;
+        grid-template-columns: 100%;
     }
 }

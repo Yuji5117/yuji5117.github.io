@@ -1,16 +1,25 @@
 .mail {
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
 }
 .mail h2 {
-    padding-top: 200px;
-    font-size: 44px;
+    color: red;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    font-size: 48px;
     font-weight: 400;
+}
+.message-box {
+    border-radius: 10px;
+    background-color: #efe3d9;
+    margin-bottom: 60px;
 }
 .mail p {
     color: #333;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    font-size: 28px;
+    padding: 50px;
+    line-height: 1.5em;
+    font-size: 20px;
 }
 .mail a {
     padding: 15px 30px;
@@ -19,4 +28,67 @@
     text-decoration: none;
     border-radius: 4px;
     background-color: #213F8A;
+}
+
+@media screen and (max-width:480px) {
+    .mail {
+        width: 85%;
+    }
+    .mail h2 {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .message-box {
+        border-radius: 10px;
+        background-color: #efe3d9;
+        margin-bottom: 40px;
+    }
+    .mail p {
+        color: #333;
+        padding: 20px;
+        line-height: 1.5em;
+        font-size: 12px;
+    }
+    .mail a {
+        padding: 10px 25px;
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        border-radius: 4px;
+        background-color: #213F8A;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width:1080px) {
+    .mail {
+        width: 80%;
+    }
+    .mail h2 {
+        padding-top: 120px;
+        padding-bottom: 50px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .message-box {
+        border-radius: 10px;
+        background-color: #efe3d9;
+        margin-bottom: 50px;
+    }
+    .mail p {
+        color: #333;
+        padding: 20px;
+        line-height: 1.5em;
+        font-size: 16px;
+    }
+    .mail a {
+        padding: 15px 30px;
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        border-radius: 4px;
+        background-color: #213F8A;
+    }
 }

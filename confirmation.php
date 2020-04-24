@@ -41,27 +41,27 @@ $address = spaceTrim($address);
 $inquiry = spaceTrim($inquiry);
 
 // 名前判定 //
-if ($name == '') {
-    $errors['name'] = "名前が入力されていません。";
-}
+// if ($name == '') {
+//     $errors['name'] = "名前が入力されていません。";
+// }
 
 // メール判定 //
-if ($mail == '') {
-    $errors['name'] = "メールが入力されていません。";
-}
+// if ($mail == '') {
+//     $errors['name'] = "メールが入力されていません。";
+// }
 
 // コメント判定 //
-if ($inquiry == '') {
-    $errors['inquiry'] = "その他記入欄が入力されていません。";
-}
+// if ($inquiry == '') {
+//     $errors['inquiry'] = "その他記入欄が入力されていません。";
+// }
 
-if(count($errors) === 0) {
-    $_SESSION["name"] = $name;
-    $_SESSION["tel"] = $tel;
-    $_SESSION["mail"] = $mail;
-    $_SESSION["address"] = $address;
-    $_SESSION["inquiry"] = $inquiry;
-}
+// if(count($errors) === 0) {
+$_SESSION["name"] = $name;
+$_SESSION["tel"] = $tel;
+$_SESSION["mail"] = $mail;
+$_SESSION["address"] = $address;
+$_SESSION["inquiry"] = $inquiry;
+// }
 
 ?>
 
@@ -74,7 +74,7 @@ if(count($errors) === 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/confirmation.css">
-    <title>Form Confirmation</title>
+    <title>確認画面</title>
 </head>
 <body>
     <div class="confirmation">
@@ -100,14 +100,14 @@ if(count($errors) === 0) {
                     <td><?php echo escape($address); ?></td>
                 </tr>
                 <tr>
-                    <td class="label">問い合わせ内容</td>
+                    <td class="label">お問い合わせ内容</td>
                     <td><?php echo nl2br(escape($inquiry)); ?></td>
                 </tr>
             </table>
             <input type="hidden" name="token" value= <?php echo escape($token); ?>>
             <div class="confirmation-btns">
                 <input class="submit-btn" type="submit" value="送信する" />
-                <input class="back-btn" type="button" value="前画面に戻る" onclick="history.back()">
+                <input class="back-btn" type="button" value="戻る" onclick="history.back()">
             </div>
         </form>
     </div>
